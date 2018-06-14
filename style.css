@@ -1,0 +1,131 @@
+@font-face {
+	font-family: Montserrat;
+	src: url(../font/Montserrat.ttf);
+}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+body {
+    background: #000;
+    color: #fff;
+    font-family: Montserrat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding: 70px;
+}
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+header .lang {
+    right: 0;
+    position: absolute;
+    display: block;
+}
+header .lang img {
+    margin-left: 10px;
+    top: -2px;
+    position: relative;
+}
+.hello {
+    color: #969696;
+    font-size: 22px;
+}
+h1 {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 87px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.email img {
+    margin-right: 10px;
+}
+.email span {
+    font-family: Montserrat;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+footer a {
+    padding: 25px;
+    margin-bottom: -25px;
+    -webkit-transition: 150ms ease;
+    transition: 150ms ease;
+    opacity: 1;
+}
+footer a:hover {
+    opacity: 0.5;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 35px 20px;
+    }
+    header {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .hello {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 66px;
+        line-height: 66px;
+        margin-top: 15px;
+    }
+    .email span {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .email img {
+        top: 2px;
+        position: relative;
+        margin-right: 5px;
+    }
+    footer a {
+        margin-bottom: -15px;
+        padding: 15px;
+    }
+}
